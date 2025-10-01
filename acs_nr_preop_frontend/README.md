@@ -1,82 +1,44 @@
-# Lightweight React Template for KAVIA
+# ACS Pre-Op Charting (Frontend)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A React web application for OR Nurses at Hospital A, implementing the ACS preoperative charting interface.
 
-## Features
+## Highlights
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Ocean Professional classic theme (clean, professional, structured)
+- Top navigation with breadcrumbs
+- Patient context section (name, MRN, age/sex, allergy, case, surgeon, date, location, ASA)
+- Left-aligned vertical tabs: Assessment, Investigations, Consents & Checks, Notes
+- Card/form layouts with subtle shadows and clear sectioning
+- Floating action buttons for Save and Submit
+- No backend dependencies (static demo data)
 
 ## Getting Started
 
-In the project directory, you can run:
+In the project directory:
 
-### `npm start`
+- `npm start` – run the dev server at http://localhost:3000
+- `npm test` – run unit tests
+- `npm run build` – production build
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Structure
 
-### `npm test`
+- `src/components/layout/AppShell.jsx` – layout shell and navigation
+- `src/components/patient/PatientContextCard.jsx` – patient context card
+- `src/pages/Assessment.jsx` – assessment form
+- `src/pages/Investigations.jsx` – investigations form
+- `src/pages/ConsentsChecks.jsx` – consents & checks
+- `src/pages/Notes.jsx` – notes
 
-Launches the test runner in interactive watch mode.
+## Styling
 
-### `npm run build`
+All theme tokens and component styles live in `src/App.css`, following the Ocean Professional palette:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Primary: #1E3A8A
+- Secondary: #F59E0B
+- Success: #059669
+- Error: #DC2626
+- Background: #F3F4F6
+- Surface: #FFFFFF
+- Text: #111827
 
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project intentionally avoids heavy UI frameworks to keep it lightweight and focused.
