@@ -1,0 +1,4 @@
+{
+    "command": "PORT=<port> HOST=<host> BROWSER=none npm start",
+    "working_directory": "/home/kavia/workspace/code-generation/preoperative-charting-system-for-or-nurses-5971-5980/acs_nr_preop_frontend"
+}
